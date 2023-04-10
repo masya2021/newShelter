@@ -1,0 +1,105 @@
+.donation {
+  background: #f6f6f6;
+}
+.donation__container {
+  padding-top: 77px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 30px;
+}
+.donation__image {
+  background-image: url("../images/donation/puppy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 505px;
+  height: 261px;
+}
+.donation__content {
+  max-width: 380px;
+}
+.donation__title {
+  max-width: 300px;
+  /* padding-top: 20px; */
+}
+.donation__subheading {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding: 20px 0;
+}
+.donation__card {
+  background: #f1cdb3;
+  border-radius: 9px;
+  padding: 10px 15px;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.danation__card-image {
+  width: 30px;
+  height: 23px;
+}
+.donation__card-number {
+  padding-left: 15px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation__info {
+  padding-top: 20px;
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+@media (max-width: 960px) {
+  .donation__container {
+    flex-direction: column-reverse;
+    padding-top: 80px;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 520px) {
+  .donation__container {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .donation__image {
+    width: 260px;
+    height: 135.2px;
+    margin-top: -15px;
+  }
+  .donation__title {
+    justify-content: center;
+  }
+  .donation__subheading {
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-left: 3px;
+  }
+  .donation__card-number {
+    font-size: 15px;
+    line-height: 1.1;
+    letter-spacing: 0.8px;
+  }
+  .donation__info {
+    text-align: justify;
+  }
+}
